@@ -11,7 +11,7 @@ public class OutputController {
 	@PostMapping("/output")
 	public String postOutput(@RequestParam("val") String val, Model model) {
 
-		model.addAttribute("outputmsg", "メッセージ: " + val);
+		model.addAttribute("val", val);
 
 		return "output";
 	}

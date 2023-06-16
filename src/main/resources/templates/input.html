@@ -5,8 +5,7 @@
 <title>Message</title>
 </head>
 <body>
-	<h1>Send message here</h1>
-    <p th:text="${inputmsg}"></p>
+	<h1 th:text="#{content.inputmsg}"></h1>
     <form method="post" action="/output">
         <input type="text" name="val" th:value="${val}">
         <button type="submit">送信</button>
